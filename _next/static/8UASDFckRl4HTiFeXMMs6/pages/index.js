@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["d0a3"],{RNiq:function(n,a,e){"use strict";e.r(a);var t=e("mXGw"),o=e.n(t);a.default=function(){return o.a.createElement(o.a.Fragment,null,"Foo bar")}},TqC3:function(n,a,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){var n=e("RNiq");return{page:n.default||n}}])}},[["TqC3","5d41","9da1"]]]);
