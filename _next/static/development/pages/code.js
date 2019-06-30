@@ -40532,6 +40532,16 @@ __webpack_require__.r(__webpack_exports__);
       
     },
   
+    'mobileFooter': {
+      'marginTop': theme.spacing(5) + 'px',
+      
+    },
+  
+    'mobileFooterText': {
+      'textAlign': 'center',
+      
+    },
+  
       };
 
       
@@ -40543,6 +40553,11 @@ __webpack_require__.r(__webpack_exports__);
     },
   
     'menuButton': {
+      'display': 'none',
+      
+    },
+  
+    'mobileFooter': {
       'display': 'none',
       
     },
@@ -41104,7 +41119,44 @@ var SitePage = function SitePage(_ref) {
       lineNumber: 214
     },
     __self: this
-  }, children)));
+  }, children, react__WEBPACK_IMPORTED_MODULE_27___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    className: classes.mobileFooter,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216
+    },
+    __self: this
+  }, PAGES.map(function (_ref5) {
+    var label = _ref5.label,
+        href = _ref5.href;
+    return react__WEBPACK_IMPORTED_MODULE_27___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      key: label,
+      button: true,
+      component: _LinkWrapper__WEBPACK_IMPORTED_MODULE_30__["default"],
+      LinkProps: {
+        href: href,
+        passHref: true,
+        prefetch: true
+      },
+      value: href,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 219
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_27___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      className: classes.mobileFooterText,
+      primary: label,
+      primaryTypographyProps: {
+        color: "primary"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 229
+      },
+      __self: this
+    }));
+  })))));
 };
 
 SitePage.propTypes = {
@@ -42056,7 +42108,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!*****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcode&absolutePagePath=%2Fhome%2Fcedric%2FDocuments%2Fpersonal-site%2Fsrc%2Fpages%2Fcode.js ***!
   \*****************************************************************************************************************************************/
@@ -42079,5 +42131,5 @@ module.exports = dll_e87fdfb005d1b68cff97;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=code.js.map
