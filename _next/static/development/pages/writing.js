@@ -18255,6 +18255,68 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "../node_modules/classnames/index.js":
+/*!*******************************************!*\
+  !*** ../node_modules/classnames/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg) && arg.length) {
+				var inner = classNames.apply(null, arg);
+				if (inner) {
+					classes.push(inner);
+				}
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if ( true && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
+
+
+/***/ }),
+
 /***/ "../node_modules/clsx/dist/clsx.m.js":
 /*!*******************************************!*\
   !*** ../node_modules/clsx/dist/clsx.m.js ***!
@@ -42027,7 +42089,7 @@ __webpack_require__.r(__webpack_exports__);
         
         
     'poem': {
-      'marginBottom': theme.spacing(4) + 'px','padding': theme.spacing(5) + 'px'+' '+theme.spacing(8) + 'px'+' '+theme.spacing(6) + 'px',
+      'padding': theme.spacing(5) + 'px'+' '+theme.spacing(8) + 'px'+' '+theme.spacing(6) + 'px','textAlign': 'left',
       
     },
   
@@ -42097,12 +42159,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Paper */ "../node_modules/@material-ui/core/esm/Paper/index.js");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Typography */ "../node_modules/@material-ui/core/esm/Typography/index.js");
 /* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/styles */ "../node_modules/@material-ui/styles/esm/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _Poem_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Poem.css */ "./containers/Writing/Poem/Poem.css");
-/* harmony import */ var _Poem_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_Poem_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _Poem_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Poem.css */ "./containers/Writing/Poem/Poem.css");
+/* harmony import */ var _Poem_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_Poem_css__WEBPACK_IMPORTED_MODULE_9__);
 
 var _jsxFileName = "/home/cedric/Documents/personal-site/src/containers/Writing/Poem/Poem.js";
 
@@ -42114,63 +42178,65 @@ var _jsxFileName = "/home/cedric/Documents/personal-site/src/containers/Writing/
 
 
 
+
 var Poem = function Poem(_ref) {
   var body = _ref.body,
+      className = _ref.className,
       title = _ref.title;
-  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(_Poem_css__WEBPACK_IMPORTED_MODULE_8___default.a)();
+  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(_Poem_css__WEBPACK_IMPORTED_MODULE_9___default.a)();
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])(false),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])(false),
       _useState2 = _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
       expanded = _useState2[0],
       setExpanded = _useState2[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
     key: title,
-    className: classes.poem,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: classes.poemTitle,
-    variant: "h6",
+    className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(classes.poem, className),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: classes.poemTitle,
+    variant: "h6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.collapse,
     collapsedHeight: "200px",
     in: expanded,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: classes.poemBody,
-    variant: "body2",
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
-  }, body.trim()), !expanded && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: classes.poemBody,
+    variant: "body2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, body.trim()), !expanded && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
     className: classes.fade,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: this
-  }))), !expanded && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }))), !expanded && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.readMore,
     color: "secondary",
     onClick: function onClick() {
@@ -42178,15 +42244,19 @@ var Poem = function Poem(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, "Read More"));
 };
 
+Poem.defaultProps = {
+  className: null
+};
 Poem.propTypes = {
-  body: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.string.isRequired,
-  title: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.string.isRequired
+  body: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  title: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Poem);
 
@@ -42222,8 +42292,8 @@ __webpack_require__.r(__webpack_exports__);
       var output = {
         
         
-    'paper': {
-      'marginBottom': theme.spacing(3) + 'px',
+    'card': {
+      'textAlign': 'left',
       
         '& $cardContent': {
           'padding': theme.spacing(3) + 'px'+' '+theme.spacing(3) + 'px'+' 0',
@@ -42291,12 +42361,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Collapse */ "../node_modules/@material-ui/core/esm/Collapse/index.js");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Typography */ "../node_modules/@material-ui/core/esm/Typography/index.js");
 /* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/styles */ "../node_modules/@material-ui/styles/esm/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _ResearchPaper_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ResearchPaper.css */ "./containers/Writing/ResearchPaper/ResearchPaper.css");
-/* harmony import */ var _ResearchPaper_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_ResearchPaper_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _ResearchPaper_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ResearchPaper.css */ "./containers/Writing/ResearchPaper/ResearchPaper.css");
+/* harmony import */ var _ResearchPaper_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_ResearchPaper_css__WEBPACK_IMPORTED_MODULE_13__);
 
 var _jsxFileName = "/home/cedric/Documents/personal-site/src/containers/Writing/ResearchPaper/ResearchPaper.js";
 
@@ -42312,27 +42384,29 @@ var _jsxFileName = "/home/cedric/Documents/personal-site/src/containers/Writing/
 
 
 
+
 var ResearchPaper = function ResearchPaper(_ref) {
   var abstract = _ref.abstract,
+      className = _ref.className,
       href = _ref.href,
       image = _ref.image,
       imageTitle = _ref.imageTitle,
       title = _ref.title;
-  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_9__["makeStyles"])(_ResearchPaper_css__WEBPACK_IMPORTED_MODULE_12___default.a)();
+  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_9__["makeStyles"])(_ResearchPaper_css__WEBPACK_IMPORTED_MODULE_13___default.a)();
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_11__["useState"])(false),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_12__["useState"])(false),
       _useState2 = _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
       abstractVisible = _useState2[0],
       setAbstractVisible = _useState2[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: classes.paper,
+  return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: classnames__WEBPACK_IMPORTED_MODULE_10___default()(classes.card, className),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 28
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: classes.cardHeader,
     title: title,
     titleTypographyProps: {
@@ -42340,49 +42414,49 @@ var ResearchPaper = function ResearchPaper(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 29
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: classes.cardMedia,
     image: image,
     title: imageTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 36
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_7__["default"], {
     in: abstractVisible,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 41
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: classes.cardContent,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 42
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: classes.abstract,
     color: "textSecondary",
     variant: "body2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, abstract))), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: classes.cardActions,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 43
     },
     __self: this
-  }, !abstractVisible && react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, abstract))), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: classes.cardActions,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, !abstractVisible && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.cardAction,
     color: "secondary",
     onClick: function onClick() {
@@ -42392,10 +42466,10 @@ var ResearchPaper = function ResearchPaper(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 53
     },
     __self: this
-  }, "Read Abstract"), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "Read Abstract"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.cardAction,
     color: "secondary",
     component: "a",
@@ -42404,18 +42478,22 @@ var ResearchPaper = function ResearchPaper(_ref) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 64
     },
     __self: this
   }, "Read Full Paper")));
 };
 
+ResearchPaper.defaultProps = {
+  className: null
+};
 ResearchPaper.propTypes = {
-  abstract: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.string.isRequired,
-  href: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.string.isRequired,
-  image: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.string.isRequired,
-  imageTitle: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.string.isRequired,
-  title: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.string.isRequired
+  abstract: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string.isRequired,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string,
+  href: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string.isRequired,
+  image: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string.isRequired,
+  imageTitle: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string.isRequired,
+  title: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (ResearchPaper);
 
@@ -42451,13 +42529,18 @@ __webpack_require__.r(__webpack_exports__);
       var output = {
         
         
-    'container': {
-      'margin': '0 auto '+theme.spacing(4) + 'px','maxWidth': '35em',
+    'content': {
+      'textAlign': 'center',
+      
+    },
+  
+    'cardContainer': {
+      'display': 'inline-block','maxWidth': '560px','padding': '0 '+theme.spacing(2) + 'px'+' '+theme.spacing(4) + 'px','verticalAlign': 'top','width': '100%',
       
     },
   
     'sectionTitle': {
-      'margin': theme.spacing(6) + 'px'+' 0 '+theme.spacing(3) + 'px',
+      'margin': theme.spacing(6) + 'px'+' 0 '+theme.spacing(5) + 'px',
       
         '&:first-child': {
           'marginTop': '0',
@@ -42470,8 +42553,18 @@ __webpack_require__.r(__webpack_exports__);
       
     output[theme.breakpoints.down('xs')] = {
       
-    'container': {
-      'paddingTop': theme.spacing(3) + 'px',
+    'content': {
+      'paddingTop': theme.spacing(4) + 'px',
+      
+    },
+  
+    'sectionTitle': {
+      'margin': theme.spacing(4) + 'px'+' 0',
+      
+    },
+  
+    'cardContainer': {
+      'paddingLeft': '0','paddingRight': '0',
       
     },
   
@@ -42534,7 +42627,7 @@ var Writing = function Writing() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: classes.container,
+    className: classes.content,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
@@ -42560,8 +42653,15 @@ var Writing = function Writing() {
         image = _ref.image,
         imageTitle = _ref.imageTitle,
         title = _ref.title;
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ResearchPaper__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       key: title,
+      className: classes.cardContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ResearchPaper__WEBPACK_IMPORTED_MODULE_8__["default"], {
       abstract: abstract,
       href: href,
       image: image,
@@ -42569,41 +42669,47 @@ var Writing = function Writing() {
       title: title,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 35
       },
       __self: this
-    });
+    }));
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0__["default"], {
     className: classes.sectionTitle,
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, "Poems"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }, _poems__WEBPACK_IMPORTED_MODULE_7__["default"].map(function (_ref2) {
     var body = _ref2.body,
         title = _ref2.title;
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Poem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       key: title,
+      className: classes.cardContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Poem__WEBPACK_IMPORTED_MODULE_6__["default"], {
       body: body,
       title: title,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 53
       },
       __self: this
-    });
+    }));
   }))));
 };
 
-Writing.propTypes = {};
 /* harmony default export */ __webpack_exports__["default"] = (Writing);
 
 /***/ }),
