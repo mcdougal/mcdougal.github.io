@@ -40528,6 +40528,122 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/EmailIcon/EmailIcon.js":
+/*!*******************************************!*\
+  !*** ./components/EmailIcon/EmailIcon.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/cedric/Documents/personal-site/src/components/EmailIcon/EmailIcon.js";
+
+
+var EmailIcon = function EmailIcon(_ref) {
+  var className = _ref.className;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    "aria-hidden": "true",
+    className: className,
+    focusable: "false",
+    role: "img",
+    viewBox: "0 0 512 512",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    // eslint-disable-next-line max-len
+    d: "M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (EmailIcon);
+
+/***/ }),
+
+/***/ "./components/EmailIcon/index.js":
+/*!***************************************!*\
+  !*** ./components/EmailIcon/index.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _EmailIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EmailIcon */ "./components/EmailIcon/EmailIcon.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (_EmailIcon__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/GitHubIcon/GitHubIcon.js":
+/*!*********************************************!*\
+  !*** ./components/GitHubIcon/GitHubIcon.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/cedric/Documents/personal-site/src/components/GitHubIcon/GitHubIcon.js";
+
+
+var GitHubIcon = function GitHubIcon(_ref) {
+  var className = _ref.className;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    "aria-hidden": "true",
+    className: className,
+    focusable: "false",
+    role: "img",
+    viewBox: "0 0 496 512",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    // eslint-disable-next-line max-len
+    d: "M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (GitHubIcon);
+
+/***/ }),
+
+/***/ "./components/GitHubIcon/index.js":
+/*!****************************************!*\
+  !*** ./components/GitHubIcon/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _GitHubIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GitHubIcon */ "./components/GitHubIcon/GitHubIcon.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (_GitHubIcon__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
 /***/ "./components/HomeIcon/HomeIcon.js":
 /*!*****************************************!*\
   !*** ./components/HomeIcon/HomeIcon.js ***!
@@ -40738,6 +40854,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LinkWrapper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LinkWrapper */ "./components/LinkWrapper/LinkWrapper.js");
 
 /* harmony default export */ __webpack_exports__["default"] = (_LinkWrapper__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./components/LinkedInIcon/LinkedInIcon.js":
+/*!*************************************************!*\
+  !*** ./components/LinkedInIcon/LinkedInIcon.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/cedric/Documents/personal-site/src/components/LinkedInIcon/LinkedInIcon.js";
+
+
+var LinkedInIcon = function LinkedInIcon(_ref) {
+  var className = _ref.className;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    "aria-hidden": "true",
+    className: className,
+    focusable: "false",
+    role: "img",
+    viewBox: "0 0 448 512",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    // eslint-disable-next-line max-len
+    d: "M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (LinkedInIcon);
+
+/***/ }),
+
+/***/ "./components/LinkedInIcon/index.js":
+/*!******************************************!*\
+  !*** ./components/LinkedInIcon/index.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LinkedInIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LinkedInIcon */ "./components/LinkedInIcon/LinkedInIcon.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (_LinkedInIcon__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -40966,13 +41140,27 @@ __webpack_require__.r(__webpack_exports__);
       
     },
   
-    'mobileFooter': {
-      'marginTop': theme.spacing(5) + 'px',
+    'footer': {
+      'alignItems': 'center','borderTop': '1px solid '+theme.palette.divider,'display': 'flex',
+      
+        '& > :first-child': {
+          'flexGrow': '1',
+        },
       
     },
   
-    'mobileFooterText': {
+    'footerItem': {
+      'display': 'inline-flex','width': 'auto',
+      
+    },
+  
+    'footerText': {
       'textAlign': 'center',
+      
+    },
+  
+    'footerIcon': {
+      'fill': theme.palette.primary.main,'height': theme.spacing(3) + 'px','width': theme.spacing(3) + 'px',
       
     },
   
@@ -40991,17 +41179,17 @@ __webpack_require__.r(__webpack_exports__);
       
     },
   
-    'mobileFooter': {
-      'display': 'none',
-      
-    },
-  
     };
   
     output[theme.breakpoints.down('sm')] = {
       
     'tabs': {
       'marginRight': theme.spacing(-2) + 'px',
+      
+    },
+  
+    'footer': {
+      'flexDirection': 'column',
       
     },
   
@@ -41026,6 +41214,15 @@ __webpack_require__.r(__webpack_exports__);
   
     'fishHelmet': {
       'display': 'none',
+      
+    },
+  
+    'footer': {
+      
+      
+        '& > :first-child': {
+          'display': 'flex','flexDirection': 'column','marginBottom': theme.spacing(2) + 'px',
+        },
       
     },
   
@@ -41080,16 +41277,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_24__);
 /* harmony import */ var _CodeIcon__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../CodeIcon */ "./components/CodeIcon/index.js");
-/* harmony import */ var _HomeIcon__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../HomeIcon */ "./components/HomeIcon/index.js");
-/* harmony import */ var _LinkWrapper__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../LinkWrapper */ "./components/LinkWrapper/index.js");
-/* harmony import */ var _MenuIcon__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../MenuIcon */ "./components/MenuIcon/index.js");
-/* harmony import */ var _MusicIcon__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../MusicIcon */ "./components/MusicIcon/index.js");
-/* harmony import */ var _VideosIcon__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../VideosIcon */ "./components/VideosIcon/index.js");
-/* harmony import */ var _WritingIcon__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../WritingIcon */ "./components/WritingIcon/index.js");
-/* harmony import */ var _SitePage_css__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./SitePage.css */ "./components/SitePage/SitePage.css");
-/* harmony import */ var _SitePage_css__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_SitePage_css__WEBPACK_IMPORTED_MODULE_32__);
+/* harmony import */ var _EmailIcon__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../EmailIcon */ "./components/EmailIcon/index.js");
+/* harmony import */ var _GitHubIcon__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../GitHubIcon */ "./components/GitHubIcon/index.js");
+/* harmony import */ var _HomeIcon__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../HomeIcon */ "./components/HomeIcon/index.js");
+/* harmony import */ var _LinkedInIcon__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../LinkedInIcon */ "./components/LinkedInIcon/index.js");
+/* harmony import */ var _LinkWrapper__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../LinkWrapper */ "./components/LinkWrapper/index.js");
+/* harmony import */ var _MenuIcon__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../MenuIcon */ "./components/MenuIcon/index.js");
+/* harmony import */ var _MusicIcon__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../MusicIcon */ "./components/MusicIcon/index.js");
+/* harmony import */ var _VideosIcon__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../VideosIcon */ "./components/VideosIcon/index.js");
+/* harmony import */ var _WritingIcon__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../WritingIcon */ "./components/WritingIcon/index.js");
+/* harmony import */ var _SitePage_css__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./SitePage.css */ "./components/SitePage/SitePage.css");
+/* harmony import */ var _SitePage_css__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_SitePage_css__WEBPACK_IMPORTED_MODULE_35__);
 
 var _jsxFileName = "/home/cedric/Documents/personal-site/src/components/SitePage/SitePage.js";
+
+
+
 
 
 
@@ -41126,28 +41329,31 @@ var IMAGE = "/static/images/headshot.jpg";
 var IMAGE_ALT = "Cedric McDougal\u2019s headshot";
 var FISH_HELMET_240 = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/fish-helmet-240.png";
 var FISH_HELMET_480 = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/fish-helmet-480.png";
+var GITHUB = "https://github.com/mcdougal";
+var LINKEDIN = "https://www.linkedin.com/in/cedric-mcdougal-2b99021a/";
+var EMAIL = "mailto:mcdougal.ce@gmail.com";
 var PAGES = [{
+  label: "Home",
+  href: "/",
+  Icon: _HomeIcon__WEBPACK_IMPORTED_MODULE_28__["default"]
+}, {
   label: "Code",
   href: "/code",
   Icon: _CodeIcon__WEBPACK_IMPORTED_MODULE_25__["default"]
 }, {
   label: "Music",
   href: "/music",
-  Icon: _MusicIcon__WEBPACK_IMPORTED_MODULE_29__["default"]
+  Icon: _MusicIcon__WEBPACK_IMPORTED_MODULE_32__["default"]
 }, {
   label: "Videos",
   href: "/videos",
-  Icon: _VideosIcon__WEBPACK_IMPORTED_MODULE_30__["default"]
+  Icon: _VideosIcon__WEBPACK_IMPORTED_MODULE_33__["default"]
 }, {
   label: "Writing",
   href: "/writing",
-  Icon: _WritingIcon__WEBPACK_IMPORTED_MODULE_31__["default"]
+  Icon: _WritingIcon__WEBPACK_IMPORTED_MODULE_34__["default"]
 }];
-var DRAWER = [{
-  label: "About Me",
-  href: "/",
-  Icon: _HomeIcon__WEBPACK_IMPORTED_MODULE_26__["default"]
-}].concat(PAGES);
+var TABS = PAGES.slice(1);
 
 var SitePage = function SitePage(_ref) {
   var children = _ref.children,
@@ -41158,7 +41364,7 @@ var SitePage = function SitePage(_ref) {
       router = _ref.router,
       title = _ref.title;
   var PageIcon = icon;
-  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_19__["makeStyles"])(_SitePage_css__WEBPACK_IMPORTED_MODULE_32___default.a)();
+  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_19__["makeStyles"])(_SitePage_css__WEBPACK_IMPORTED_MODULE_35___default.a)();
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_24__["useState"])(false),
       _useState2 = _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
@@ -41166,27 +41372,27 @@ var SitePage = function SitePage(_ref) {
       setDrawerIsOpen = _useState2[1];
 
   var trigger = Object(_material_ui_core_useScrollTrigger__WEBPACK_IMPORTED_MODULE_18__["default"])();
-  var selectedPage = PAGES.find(function (_ref2) {
+  var selectedTab = TABS.find(function (_ref2) {
     var href = _ref2.href;
     return router.pathname === href;
   });
   return react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_24___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 79
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_20___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 80
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("title", {
     key: "title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 81
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("meta", {
@@ -41195,7 +41401,7 @@ var SitePage = function SitePage(_ref) {
     name: "description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 82
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("meta", {
@@ -41204,7 +41410,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:type",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 83
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("meta", {
@@ -41213,7 +41419,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 84
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("meta", {
@@ -41222,7 +41428,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 85
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("meta", {
@@ -41231,7 +41437,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 90
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("meta", {
@@ -41240,7 +41446,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:image:alt",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 91
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("link", {
@@ -41249,7 +41455,7 @@ var SitePage = function SitePage(_ref) {
     sizes: "180x180",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 93
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("link", {
@@ -41259,7 +41465,7 @@ var SitePage = function SitePage(_ref) {
     type: "image/png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 98
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("link", {
@@ -41269,7 +41475,7 @@ var SitePage = function SitePage(_ref) {
     type: "image/png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 104
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("link", {
@@ -41277,7 +41483,7 @@ var SitePage = function SitePage(_ref) {
     rel: "manifest",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 110
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("link", {
@@ -41286,7 +41492,7 @@ var SitePage = function SitePage(_ref) {
     rel: "mask-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 114
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("link", {
@@ -41294,7 +41500,7 @@ var SitePage = function SitePage(_ref) {
     rel: "shortcut icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 119
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("meta", {
@@ -41302,7 +41508,7 @@ var SitePage = function SitePage(_ref) {
     name: "msapplication-TileColor",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 123
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("meta", {
@@ -41310,7 +41516,7 @@ var SitePage = function SitePage(_ref) {
     name: "msapplication-config",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 124
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Slide__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -41319,27 +41525,27 @@ var SitePage = function SitePage(_ref) {
     in: !trigger,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 129
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.appBar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 130
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_16__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 131
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("div", {
     className: classes.left,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 132
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_21___default.a, {
@@ -41348,7 +41554,7 @@ var SitePage = function SitePage(_ref) {
     prefetch: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 133
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -41357,14 +41563,14 @@ var SitePage = function SitePage(_ref) {
     focusRipple: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 134
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(PageIcon, {
     className: classes.titleIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 135
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -41372,27 +41578,27 @@ var SitePage = function SitePage(_ref) {
     variant: "h6",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 136
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("span", {
     className: classes.desktopTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 137
     },
     __self: this
   }, "Cedric McDougal"), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("span", {
     className: classes.mobileTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 140
     },
     __self: this
   }, mobileTitle)))), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_NoSsr__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 144
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("img", {
@@ -41402,7 +41608,7 @@ var SitePage = function SitePage(_ref) {
     srcSet: "".concat(FISH_HELMET_240, " 240w, ").concat(FISH_HELMET_480, " 480w"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 145
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -41412,13 +41618,13 @@ var SitePage = function SitePage(_ref) {
         display: "none"
       }
     },
-    value: selectedPage ? selectedPage.href : false,
+    value: selectedTab ? selectedTab.href : false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 153
     },
     __self: this
-  }, PAGES.map(function (_ref3) {
+  }, TABS.map(function (_ref3) {
     var label = _ref3.label,
         href = _ref3.href;
     return react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -41427,12 +41633,12 @@ var SitePage = function SitePage(_ref) {
         selected: classes.selected
       },
       className: classes.tab,
-      component: _LinkWrapper__WEBPACK_IMPORTED_MODULE_27__["default"],
+      component: _LinkWrapper__WEBPACK_IMPORTED_MODULE_30__["default"],
       label: react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_24___default.a.Fragment, null, label, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("div", {
         className: classes.underline,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 171
         },
         __self: this
       })),
@@ -41444,7 +41650,7 @@ var SitePage = function SitePage(_ref) {
       value: href,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 153
+        lineNumber: 161
       },
       __self: this
     });
@@ -41455,14 +41661,14 @@ var SitePage = function SitePage(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 184
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_MenuIcon__WEBPACK_IMPORTED_MODULE_28__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_MenuIcon__WEBPACK_IMPORTED_MODULE_31__["default"], {
     className: classes.menuIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181
+      lineNumber: 189
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -41473,17 +41679,17 @@ var SitePage = function SitePage(_ref) {
     open: drawerIsOpen,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183
+      lineNumber: 191
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: classes.drawerList,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 197
     },
     __self: this
-  }, DRAWER.map(function (_ref4) {
+  }, PAGES.map(function (_ref4) {
     var label = _ref4.label,
         href = _ref4.href,
         Icon = _ref4.Icon;
@@ -41494,7 +41700,7 @@ var SitePage = function SitePage(_ref) {
       prefetch: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 192
+        lineNumber: 200
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -41503,28 +41709,28 @@ var SitePage = function SitePage(_ref) {
       component: "a",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 193
+        lineNumber: 201
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10__["default"], {
       className: classes.drawerListItemIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 197
+        lineNumber: 205
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(Icon, {
       className: classes.drawerListIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 198
+        lineNumber: 206
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
       primary: label,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 200
+        lineNumber: 208
       },
       __self: this
     })));
@@ -41532,25 +41738,35 @@ var SitePage = function SitePage(_ref) {
     maxWidth: "xl",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210
+      lineNumber: 218
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    mb: 8,
     mt: {
       xs: 7,
       sm: 14
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211
+      lineNumber: 219
     },
     __self: this
-  }, children, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: classes.mobileFooter,
+  }, children, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: classes.footer,
+    mt: {
+      xs: 5,
+      sm: 15
+    },
+    p: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 213
+      lineNumber: 221
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 222
     },
     __self: this
   }, PAGES.map(function (_ref5) {
@@ -41559,31 +41775,97 @@ var SitePage = function SitePage(_ref) {
     return react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
       key: label,
       button: true,
-      component: _LinkWrapper__WEBPACK_IMPORTED_MODULE_27__["default"],
+      className: classes.footerItem,
+      component: _LinkWrapper__WEBPACK_IMPORTED_MODULE_30__["default"],
       LinkProps: {
         href: href,
         passHref: true,
         prefetch: true
       },
-      value: href,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 216
+        lineNumber: 225
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      className: classes.mobileFooterText,
+      className: classes.footerText,
       primary: label,
       primaryTypographyProps: {
         color: "primary"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 226
+        lineNumber: 235
       },
       __self: this
     }));
-  })))));
+  })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 246
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    "aria-label": "GitHub",
+    color: "primary",
+    component: "a",
+    href: GITHUB,
+    rel: "noopener noreferrer",
+    target: "_blank",
+    title: "GitHub",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 247
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_GitHubIcon__WEBPACK_IMPORTED_MODULE_27__["default"], {
+    className: classes.footerIcon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 255
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    "aria-label": "LinkedIn",
+    color: "primary",
+    component: "a",
+    href: LINKEDIN,
+    rel: "noopener noreferrer",
+    target: "_blank",
+    title: "LinkedIn",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 257
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_LinkedInIcon__WEBPACK_IMPORTED_MODULE_29__["default"], {
+    className: classes.footerIcon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 265
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    "aria-label": "Email Me",
+    color: "primary",
+    component: "a",
+    href: EMAIL,
+    rel: "noopener noreferrer",
+    target: "_blank",
+    title: "Email",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 267
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_EmailIcon__WEBPACK_IMPORTED_MODULE_26__["default"], {
+    className: classes.footerIcon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 275
+    },
+    __self: this
+  })))))));
 };
 
 SitePage.propTypes = {
@@ -41780,7 +42062,12 @@ __webpack_require__.r(__webpack_exports__);
     output[theme.breakpoints.down('xs')] = {
       
     'poem': {
-      'padding': theme.spacing(3) + 'px'+' '+theme.spacing(4) + 'px'+' '+theme.spacing(4) + 'px',
+      'padding': theme.spacing(3) + 'px'+' '+theme.spacing(4) + 'px',
+      
+    },
+  
+    'poemBody': {
+      'paddingBottom': theme.spacing(1) + 'px',
       
     },
   
@@ -41950,7 +42237,7 @@ __webpack_require__.r(__webpack_exports__);
     },
   
     'cardMedia': {
-      'height': '0','paddingTop': '56.25%',
+      'backgroundPosition': 'top','height': '0','paddingTop': '56.25%',
       
     },
   
@@ -42356,8 +42643,8 @@ __webpack_require__.r(__webpack_exports__);
   title: "Overcoming the CAP Theorem: A survey of research on " + "distributed computing",
   abstract: "\nThe vast amount of digital data in the world has led many companies to adopt distributed computing. However, this is not a perfect solution. Eric Brewer's CAP Theorem outlines a few of the limitations inherent in distributed computing. This paper explores current efforts to overcome these limitations. First, I introduce and explain the CAP Theorem. Then, I examine modern strategies for addressing the CAP Theorem limitations. Finally, I conclude the paper by summarizing my findings, explaining limitations in my research, and ruminating on the future of distributed computing.\n    ".trim(),
   href: "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/docs/overcoming-the-cap-theorem-a-survey-of-research-on-distributed-computing.pdf",
-  image: "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/network-cables-800.jpg",
-  imageTitle: "Network cables plugged in \u2014 photo by Jordan Harrison on Unsplash"
+  image: "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/network-800.jpg",
+  imageTitle: "Stylized illustration of a network graph"
 }]);
 
 /***/ }),
@@ -42391,7 +42678,7 @@ __webpack_require__.r(__webpack_exports__);
   body: "\nOh Winter's wrath besets the world with rage!\nTenacious, striking, Winter never sleeps.\nShe dominates the sun and Heaven's stage,\nHer breath is colder than the frozen deep.\n\nAs death doth rob the dying body's heat,\nShe steals remaining warmth from Autumn's air.\nHer baleful temper slings the snow and sleet,\nOppressing all the world without a care.\n\nYet Winter's wrath precedes a warmer Spring.\nShe cedes control of all the frozen land.\nThe sun comes forth and birds begin to sing,\nThe time has come for Spring to make her stand.\n\nThe seasons ever cycle on their path,\nOh Life will never stop through joy and wrath\n    "
 }, {
   title: "Lost",
-  body: "\nThe setting sun, the fleeing light,\nThe longest hour of the endless night.\n\nThe looming darkness full of fright:\nDancing devil, frolicking sprite.\n\nUp and down and left and right,\nThe shadow closes; its grip so tight.\n\nTry as you will with all your might,\nYou can't shake off your eerie plight.\n\nThe drooling jaws, the gnashing bite,\nThe nothingness that none can fight.\n\nAnd when it takes away your sight,\nYou're filled with opposite of white.\n\nYou feel as if you've lost your height,\nYou feel as though your soul is slight.\n\nYour thoughts a jungle, your mind a blight,\nThe moon drains you of your delight.\n\nIs morning come? Not yet, not quite.\nThis void's becoming rather trite.\n\nFor to survive you must invite\nThe morbid fact that naught\u2019s alright\n    "
+  body: "\nThe setting sun, the fleeing light,\nThe longest hour of the endless night.\n\nThe looming darkness full of fright:\nDancing devil, frolicking sprite.\n\nUp and down and left and right,\nThe shadow closes; its grip so tight.\n\nTry as you will with all your might,\nYou can't shake off your eerie plight.\n\nThe drooling jaws, the gnashing bite,\nThe nothingness that none can fight.\n\nAnd when it takes away your sight,\nYou're filled with opposite of white.\n\nYou feel as if you've lost your height,\nYou feel as though your soul is slight.\n\nYour thoughts a jungle, your mind a blight,\nThe moon drains you of your delight.\n\nIs morning come? Not yet, not quite.\nThis void's becoming rather trite.\n\nFor to survive you must invite\nThe morbid fact that naught\u2019s alright.\n    "
 }, {
   title: "On the Edge of Candle's Light",
   body: "\nAs night is raised with setting day,\nAcross the mind to candle's light\nThe darkened realm,\nThe brightened sprite.\n\nDwelling in the dripping glow\nWith flicking wings, the darting click\nOf bickering flame\nAnd wilting wick.\n\nSetting eyes of yellow shift\nThe edgy spore of shadow's knot;\nIt wavers back\nThe rotting thought.\n\nGnawing cross the candle's cell are\nMinute claws that cringe and cower\nWith second life\nIn final hour.\n\nAnd as the core is lowered still,\nToo void, the emptiness it lies\nToo bare, in sleep\nDeceit deprives.\n\nAnd so avoid the rest of time:\nIn meaning less it feeds on all\nWith lulling grasp,\nMirages fall.\n    "
