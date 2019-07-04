@@ -41717,10 +41717,12 @@ var SitePage = function SitePage(_ref) {
       __self: this
     });
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    "aria-label": "Menu",
     className: classes.menuButton,
     onClick: function onClick() {
       setDrawerIsOpen(true);
     },
+    title: "Menu",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 184
@@ -41730,7 +41732,7 @@ var SitePage = function SitePage(_ref) {
     className: classes.menuIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 191
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -41741,14 +41743,15 @@ var SitePage = function SitePage(_ref) {
     open: drawerIsOpen,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191
+      lineNumber: 193
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: classes.drawerList,
+    component: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197
+      lineNumber: 199
     },
     __self: this
   }, PAGES.map(function (_ref4) {
@@ -41762,7 +41765,7 @@ var SitePage = function SitePage(_ref) {
       prefetch: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 200
+        lineNumber: 202
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -41771,28 +41774,28 @@ var SitePage = function SitePage(_ref) {
       component: "a",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 201
+        lineNumber: 203
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10__["default"], {
       className: classes.drawerListItemIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 205
+        lineNumber: 207
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(Icon, {
       className: classes.drawerListIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 206
+        lineNumber: 208
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
       primary: label,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 208
+        lineNumber: 210
       },
       __self: this
     })));
@@ -41800,7 +41803,7 @@ var SitePage = function SitePage(_ref) {
     maxWidth: "xl",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218
+      lineNumber: 220
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41810,7 +41813,7 @@ var SitePage = function SitePage(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219
+      lineNumber: 221
     },
     __self: this
   }, children, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41822,13 +41825,14 @@ var SitePage = function SitePage(_ref) {
     p: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221
+      lineNumber: 223
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    component: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 222
+      lineNumber: 224
     },
     __self: this
   }, PAGES.map(function (_ref5) {
@@ -41846,7 +41850,7 @@ var SitePage = function SitePage(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 225
+        lineNumber: 227
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -41857,14 +41861,14 @@ var SitePage = function SitePage(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 235
+        lineNumber: 237
       },
       __self: this
     }));
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 246
+      lineNumber: 248
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41877,14 +41881,14 @@ var SitePage = function SitePage(_ref) {
     title: "GitHub",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 247
+      lineNumber: 249
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_GitHubIcon__WEBPACK_IMPORTED_MODULE_27__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 255
+      lineNumber: 257
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41897,14 +41901,14 @@ var SitePage = function SitePage(_ref) {
     title: "LinkedIn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 257
+      lineNumber: 259
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_LinkedInIcon__WEBPACK_IMPORTED_MODULE_29__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265
+      lineNumber: 267
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41917,14 +41921,14 @@ var SitePage = function SitePage(_ref) {
     title: "Email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 267
+      lineNumber: 269
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_EmailIcon__WEBPACK_IMPORTED_MODULE_26__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 275
+      lineNumber: 277
     },
     __self: this
   })))))));

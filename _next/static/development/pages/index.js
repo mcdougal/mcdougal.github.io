@@ -40619,10 +40619,12 @@ var SitePage = function SitePage(_ref) {
       __self: this
     });
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    "aria-label": "Menu",
     className: classes.menuButton,
     onClick: function onClick() {
       setDrawerIsOpen(true);
     },
+    title: "Menu",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 184
@@ -40632,7 +40634,7 @@ var SitePage = function SitePage(_ref) {
     className: classes.menuIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 191
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -40643,14 +40645,15 @@ var SitePage = function SitePage(_ref) {
     open: drawerIsOpen,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191
+      lineNumber: 193
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: classes.drawerList,
+    component: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197
+      lineNumber: 199
     },
     __self: this
   }, PAGES.map(function (_ref4) {
@@ -40664,7 +40667,7 @@ var SitePage = function SitePage(_ref) {
       prefetch: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 200
+        lineNumber: 202
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -40673,28 +40676,28 @@ var SitePage = function SitePage(_ref) {
       component: "a",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 201
+        lineNumber: 203
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10__["default"], {
       className: classes.drawerListItemIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 205
+        lineNumber: 207
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(Icon, {
       className: classes.drawerListIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 206
+        lineNumber: 208
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
       primary: label,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 208
+        lineNumber: 210
       },
       __self: this
     })));
@@ -40702,7 +40705,7 @@ var SitePage = function SitePage(_ref) {
     maxWidth: "xl",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218
+      lineNumber: 220
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -40712,7 +40715,7 @@ var SitePage = function SitePage(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219
+      lineNumber: 221
     },
     __self: this
   }, children, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -40724,13 +40727,14 @@ var SitePage = function SitePage(_ref) {
     p: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221
+      lineNumber: 223
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    component: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 222
+      lineNumber: 224
     },
     __self: this
   }, PAGES.map(function (_ref5) {
@@ -40748,7 +40752,7 @@ var SitePage = function SitePage(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 225
+        lineNumber: 227
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -40759,14 +40763,14 @@ var SitePage = function SitePage(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 235
+        lineNumber: 237
       },
       __self: this
     }));
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 246
+      lineNumber: 248
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -40779,14 +40783,14 @@ var SitePage = function SitePage(_ref) {
     title: "GitHub",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 247
+      lineNumber: 249
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_GitHubIcon__WEBPACK_IMPORTED_MODULE_27__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 255
+      lineNumber: 257
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -40799,14 +40803,14 @@ var SitePage = function SitePage(_ref) {
     title: "LinkedIn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 257
+      lineNumber: 259
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_LinkedInIcon__WEBPACK_IMPORTED_MODULE_29__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265
+      lineNumber: 267
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -40819,14 +40823,14 @@ var SitePage = function SitePage(_ref) {
     title: "Email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 267
+      lineNumber: 269
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_24___default.a.createElement(_EmailIcon__WEBPACK_IMPORTED_MODULE_26__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 275
+      lineNumber: 277
     },
     __self: this
   })))))));
@@ -41072,6 +41076,7 @@ var NEIGHBORSCHOOLS_URL = "https://www.neighborschools.com";
 var CHILD_CARE_CRISIS_URL = "https://www.publichealthpost.org/research/american-child-care-crisis/";
 var HEADSHOT_200 = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/headshot-200.jpg";
 var HEADSHOT_400 = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/headshot-400.jpg";
+var HEADSHOT_400_WEBP = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/headshot-400.webp";
 
 var HomePage = function HomePage() {
   var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(_Home_css__WEBPACK_IMPORTED_MODULE_8___default.a)();
@@ -41083,14 +41088,14 @@ var HomePage = function HomePage() {
     title: TITLE,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.content,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41099,7 +41104,7 @@ var HomePage = function HomePage() {
     variant: "body1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }, "Hello, my name is"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41109,7 +41114,7 @@ var HomePage = function HomePage() {
     variant: "h2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, "Cedric McDougal"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41117,7 +41122,7 @@ var HomePage = function HomePage() {
     variant: "body1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, "I\u2019m a software developer living in Boston. I\u2019m currently building", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_0__["default"], {
@@ -41127,7 +41132,7 @@ var HomePage = function HomePage() {
     underline: "always",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, "NeighborSchools"), " ", "to help solve the", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_0__["default"], {
@@ -41137,33 +41142,47 @@ var HomePage = function HomePage() {
     underline: "always",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 58
     },
     __self: this
   }, "child care crisis"), " ", "in the U.S."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
     className: classes.headshotContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("picture", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("source", {
+    srcSet: HEADSHOT_400_WEBP,
+    type: "image/webp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
     alt: "Cedric\u2019s smiling face",
     className: classes.headshot,
     src: HEADSHOT_400,
     srcSet: "".concat(HEADSHOT_200, " 200w, ").concat(HEADSHOT_400, " 400w"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 71
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
     color: "primary",
     paragraph: true,
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 78
     },
     __self: this
   }, "\u2190 this is me")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41171,26 +41190,11 @@ var HomePage = function HomePage() {
     variant: "body1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 82
     },
     __self: this
   }, "This website is a collection of my various projects. You can check out my", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
     href: "/code",
-    passHref: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_0__["default"], {
-    underline: "always",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83
-    },
-    __self: this
-  }, "code")), ",", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    href: "/music",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
@@ -41204,8 +41208,8 @@ var HomePage = function HomePage() {
       lineNumber: 87
     },
     __self: this
-  }, "music")), ",", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    href: "/videos",
+  }, "code")), ",", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    href: "/music",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
@@ -41219,8 +41223,8 @@ var HomePage = function HomePage() {
       lineNumber: 91
     },
     __self: this
-  }, "videos")), " ", "and", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    href: "/writing",
+  }, "music")), ",", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    href: "/videos",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
@@ -41234,12 +41238,27 @@ var HomePage = function HomePage() {
       lineNumber: 95
     },
     __self: this
+  }, "videos")), " ", "and", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    href: "/writing",
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_0__["default"], {
+    underline: "always",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
   }, "writing")), ". If you want to get in touch, feel free to shoot me an", " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_0__["default"], {
     href: "mailto:mcdougal.ce@gmail.com",
     underline: "always",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 103
     },
     __self: this
   }, "email"), ". Thanks for stopping by!")));
