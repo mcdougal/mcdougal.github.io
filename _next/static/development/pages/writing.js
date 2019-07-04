@@ -41143,14 +41143,19 @@ __webpack_require__.r(__webpack_exports__);
           'color': theme.palette.secondary.main,
         },
       
-        '&:hover + $fishHelmet': {
+        '&:hover + $fishHelmetContainer': {
           'transform': 'rotate(-10deg)','transitionDelay': '500ms','transitionDuration': theme.transitions.duration.shortest,
         },
       
     },
   
+    'fishHelmetContainer': {
+      'bottom': '-30px','position': 'fixed','right': '-10px','transform': 'translate(235px, 30px) rotate(-4deg)','transitionDuration': theme.transitions.duration.leavingScreen,'transitionProperty': 'transform','transitionTimingFunction': theme.transitions.easing.easeInOut,'zIndex': theme.zIndex.drawer,
+      
+    },
+  
     'fishHelmet': {
-      'bottom': '-20px','height': '300px','minHeight': '300px','minWidth': '240px','position': 'fixed','right': '10px','transform': 'translate(235px, 30px) rotate(-4deg)','transitionDuration': theme.transitions.duration.leavingScreen,'transitionProperty': 'transform','transitionTimingFunction': theme.transitions.easing.easeInOut,'width': '240px','zIndex': theme.zIndex.drawer,
+      'height': '300px','minHeight': '300px','minWidth': '240px','width': '240px',
       
     },
   
@@ -41278,7 +41283,7 @@ __webpack_require__.r(__webpack_exports__);
       
     },
   
-    'fishHelmet': {
+    'fishHelmetContainer': {
       'display': 'none',
       
     },
@@ -41391,8 +41396,9 @@ var _jsxFileName = "/home/cedric/Documents/personal-site/src/components/SitePage
 
 var IMAGE = "/static/images/headshot.jpg";
 var IMAGE_ALT = "Cedric McDougal\u2019s headshot";
-var FISH_HELMET_240 = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/fish-helmet-240.png";
-var FISH_HELMET_480 = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/fish-helmet-480.png";
+var FISH_240 = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/fish-helmet-240.png";
+var FISH_480 = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/fish-helmet-480.png";
+var FISH_480_WEBP = "https://cedricmcdougal.s3.us-east-2.amazonaws.com/personal-site/images/fish-helmet-480.webp";
 var GITHUB = "https://github.com/mcdougal";
 var LINKEDIN = "https://www.linkedin.com/in/cedric-mcdougal-2b99021a/";
 var EMAIL = "mailto:mcdougal.ce@gmail.com";
@@ -41448,25 +41454,25 @@ var SitePage = function SitePage(_ref) {
   Object(react__WEBPACK_IMPORTED_MODULE_23__["useEffect"])(function () {
     setTimeout(function () {
       setShouldLoadFish(true);
-    }, 1000);
+    }, 5000);
   }, []);
   return react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_23___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 86
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_19___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 87
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("title", {
     key: "title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 88
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41475,7 +41481,7 @@ var SitePage = function SitePage(_ref) {
     name: "description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 89
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41484,7 +41490,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:type",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 90
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41493,7 +41499,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 91
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41502,7 +41508,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 92
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41511,7 +41517,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 97
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41520,7 +41526,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:image:alt",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41529,7 +41535,7 @@ var SitePage = function SitePage(_ref) {
     sizes: "180x180",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41539,7 +41545,7 @@ var SitePage = function SitePage(_ref) {
     type: "image/png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41549,7 +41555,7 @@ var SitePage = function SitePage(_ref) {
     type: "image/png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 111
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41557,7 +41563,7 @@ var SitePage = function SitePage(_ref) {
     rel: "manifest",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 117
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41566,7 +41572,7 @@ var SitePage = function SitePage(_ref) {
     rel: "mask-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 121
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41574,7 +41580,7 @@ var SitePage = function SitePage(_ref) {
     rel: "shortcut icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 126
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41582,7 +41588,7 @@ var SitePage = function SitePage(_ref) {
     name: "msapplication-TileColor",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 130
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41590,7 +41596,7 @@ var SitePage = function SitePage(_ref) {
     name: "msapplication-config",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 131
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Slide__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -41599,27 +41605,27 @@ var SitePage = function SitePage(_ref) {
     in: !trigger,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 136
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.appBar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 137
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_15__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 138
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("div", {
     className: classes.left,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 139
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_20___default.a, {
@@ -41628,7 +41634,7 @@ var SitePage = function SitePage(_ref) {
     prefetch: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 140
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -41637,14 +41643,14 @@ var SitePage = function SitePage(_ref) {
     focusRipple: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 141
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(PageIcon, {
     className: classes.titleIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 142
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -41652,34 +41658,55 @@ var SitePage = function SitePage(_ref) {
     variant: "h6",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 143
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("span", {
     className: classes.desktopTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 144
     },
     __self: this
   }, "Cedric McDougal"), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("span", {
     className: classes.mobileTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 147
     },
     __self: this
-  }, mobileTitle)))), shouldLoadFish && react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("img", {
-    alt: "Cedric in a hat that looks like an anglerfish",
-    className: classes.fishHelmet,
-    src: FISH_HELMET_480,
-    srcSet: "".concat(FISH_HELMET_240, " 240w, ").concat(FISH_HELMET_480, " 480w"),
+  }, mobileTitle)))), shouldLoadFish && react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("div", {
+    className: classes.fishHelmetContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 152
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_14__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("picture", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("source", {
+    srcSet: FISH_480_WEBP,
+    type: "image/webp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("img", {
+    alt: "Cedric in a hat that looks like an anglerfish",
+    className: classes.fishHelmet,
+    src: FISH_480,
+    srcSet: "".concat(FISH_240, " 240w, ").concat(FISH_480, " 480w"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 155
+    },
+    __self: this
+  })))), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_14__["default"], {
     className: classes.tabs,
     TabIndicatorProps: {
       style: {
@@ -41689,7 +41716,7 @@ var SitePage = function SitePage(_ref) {
     value: selectedTab ? selectedTab.href : false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 165
     },
     __self: this
   }, TABS.map(function (_ref3) {
@@ -41706,7 +41733,7 @@ var SitePage = function SitePage(_ref) {
         className: classes.underline,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 183
         },
         __self: this
       })),
@@ -41718,7 +41745,7 @@ var SitePage = function SitePage(_ref) {
       value: href,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 167
+        lineNumber: 173
       },
       __self: this
     });
@@ -41731,14 +41758,14 @@ var SitePage = function SitePage(_ref) {
     title: "Menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190
+      lineNumber: 196
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_MenuIcon__WEBPACK_IMPORTED_MODULE_30__["default"], {
     className: classes.menuIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197
+      lineNumber: 203
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -41749,7 +41776,7 @@ var SitePage = function SitePage(_ref) {
     open: drawerIsOpen,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199
+      lineNumber: 205
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -41757,7 +41784,7 @@ var SitePage = function SitePage(_ref) {
     component: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205
+      lineNumber: 211
     },
     __self: this
   }, PAGES.map(function (_ref4) {
@@ -41771,7 +41798,7 @@ var SitePage = function SitePage(_ref) {
       prefetch: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 208
+        lineNumber: 214
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -41780,28 +41807,28 @@ var SitePage = function SitePage(_ref) {
       component: "a",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 209
+        lineNumber: 215
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10__["default"], {
       className: classes.drawerListItemIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 213
+        lineNumber: 219
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(Icon, {
       className: classes.drawerListIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 214
+        lineNumber: 220
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
       primary: label,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 216
+        lineNumber: 222
       },
       __self: this
     })));
@@ -41809,7 +41836,7 @@ var SitePage = function SitePage(_ref) {
     maxWidth: "xl",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226
+      lineNumber: 232
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41819,7 +41846,7 @@ var SitePage = function SitePage(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227
+      lineNumber: 233
     },
     __self: this
   }, children, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41831,14 +41858,14 @@ var SitePage = function SitePage(_ref) {
     p: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229
+      lineNumber: 235
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
     component: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 230
+      lineNumber: 236
     },
     __self: this
   }, PAGES.map(function (_ref5) {
@@ -41856,7 +41883,7 @@ var SitePage = function SitePage(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 233
+        lineNumber: 239
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -41867,14 +41894,14 @@ var SitePage = function SitePage(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 243
+        lineNumber: 249
       },
       __self: this
     }));
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 254
+      lineNumber: 260
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41887,14 +41914,14 @@ var SitePage = function SitePage(_ref) {
     title: "GitHub",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 255
+      lineNumber: 261
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_GitHubIcon__WEBPACK_IMPORTED_MODULE_26__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 263
+      lineNumber: 269
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41907,14 +41934,14 @@ var SitePage = function SitePage(_ref) {
     title: "LinkedIn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265
+      lineNumber: 271
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_LinkedInIcon__WEBPACK_IMPORTED_MODULE_28__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 273
+      lineNumber: 279
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41927,14 +41954,14 @@ var SitePage = function SitePage(_ref) {
     title: "Email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 275
+      lineNumber: 281
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_EmailIcon__WEBPACK_IMPORTED_MODULE_25__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 283
+      lineNumber: 289
     },
     __self: this
   })))))));
