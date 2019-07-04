@@ -36956,7 +36956,11 @@ var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["create
     }
   },
   palette: {
-    primary: _material_ui_core_colors_blueGrey__WEBPACK_IMPORTED_MODULE_0___default.a,
+    primary: {
+      light: _material_ui_core_colors_blueGrey__WEBPACK_IMPORTED_MODULE_0___default.a[500],
+      main: _material_ui_core_colors_blueGrey__WEBPACK_IMPORTED_MODULE_0___default.a[700],
+      dark: _material_ui_core_colors_blueGrey__WEBPACK_IMPORTED_MODULE_0___default.a[900]
+    },
     secondary: _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_1___default.a,
     common: {
       black: "#222"
