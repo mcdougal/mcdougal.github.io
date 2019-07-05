@@ -40335,6 +40335,126 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/Media/Media.js":
+/*!***********************************!*\
+  !*** ./components/Media/Media.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "../node_modules/@babel/runtime-corejs2/helpers/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/defineProperty */ "../node_modules/@babel/runtime-corejs2/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/objectWithoutProperties */ "../node_modules/@babel/runtime-corejs2/helpers/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/ButtonBase */ "../node_modules/@material-ui/core/esm/ButtonBase/index.js");
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/styles */ "../node_modules/@material-ui/styles/esm/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+var _jsxFileName = "/home/cedric/Documents/personal-site/src/components/Media/Media.js";
+
+
+
+
+
+
+var Media = function Media(_ref) {
+  var className = _ref.className,
+      component = _ref.component,
+      image = _ref.image,
+      otherProps = _babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3___default()(_ref, ["className", "component", "image"]);
+
+  var Component = component;
+  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(function () {
+    return {
+      loadImage: {},
+      mediaBackground: {
+        'html.no-webp &$loadImage': {
+          backgroundImage: "url('".concat(image.default, "')")
+        },
+        'html.webp &$loadImage ': {
+          backgroundImage: "url('".concat(image.webp, "')")
+        }
+      }
+    };
+  })();
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])(false),
+      _useState2 = _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
+      shouldLoadImage = _useState2[0],
+      setShouldLoadImage = _useState2[1];
+
+  var ref = Object(react__WEBPACK_IMPORTED_MODULE_8__["useRef"])(null);
+  Object(react__WEBPACK_IMPORTED_MODULE_8__["useEffect"])(function () {
+    if ("IntersectionObserver" in window) {
+      var lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setShouldLoadImage(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+      lazyImageObserver.observe(ref.current);
+    } else {
+      setShouldLoadImage(true);
+    }
+  }, []);
+  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, otherProps, {
+    className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(className, classes.mediaBackground, _babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, classes.loadImage, shouldLoadImage)),
+    ref: ref,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }));
+};
+
+Media.defaultProps = {
+  className: null,
+  component: _material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_4__["default"]
+};
+Media.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  component: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.func]),
+  image: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.shape({
+    default: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired,
+    webp: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired
+  }).isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Media);
+
+/***/ }),
+
+/***/ "./components/Media/index.js":
+/*!***********************************!*\
+  !*** ./components/Media/index.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Media__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Media */ "./components/Media/Media.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (_Media__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
 /***/ "./components/MenuIcon/MenuIcon.js":
 /*!*****************************************!*\
   !*** ./components/MenuIcon/MenuIcon.js ***!
@@ -40904,27 +41024,30 @@ var SitePage = function SitePage(_ref) {
     return router.pathname === href;
   });
   Object(react__WEBPACK_IMPORTED_MODULE_23__["useEffect"])(function () {
-    setTimeout(function () {
+    var timeout = setTimeout(function () {
       setShouldLoadFish(true);
     }, 5000);
+    return function () {
+      clearTimeout(timeout);
+    };
   }, []);
   return react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_23___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 90
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_19___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 91
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("title", {
     key: "title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 92
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -40933,7 +41056,7 @@ var SitePage = function SitePage(_ref) {
     name: "description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 93
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -40942,7 +41065,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:type",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 94
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -40951,7 +41074,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 95
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -40960,7 +41083,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 96
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -40969,7 +41092,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 101
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -40978,7 +41101,7 @@ var SitePage = function SitePage(_ref) {
     property: "og:image:alt",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 102
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -40987,7 +41110,7 @@ var SitePage = function SitePage(_ref) {
     sizes: "180x180",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 104
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -40997,7 +41120,7 @@ var SitePage = function SitePage(_ref) {
     type: "image/png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 109
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41007,7 +41130,7 @@ var SitePage = function SitePage(_ref) {
     type: "image/png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 115
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41015,7 +41138,7 @@ var SitePage = function SitePage(_ref) {
     rel: "manifest",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 121
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41024,7 +41147,7 @@ var SitePage = function SitePage(_ref) {
     rel: "mask-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 125
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("link", {
@@ -41032,7 +41155,7 @@ var SitePage = function SitePage(_ref) {
     rel: "shortcut icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 130
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41040,7 +41163,7 @@ var SitePage = function SitePage(_ref) {
     name: "msapplication-TileColor",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 134
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("meta", {
@@ -41048,7 +41171,7 @@ var SitePage = function SitePage(_ref) {
     name: "msapplication-config",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 135
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Slide__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -41057,27 +41180,27 @@ var SitePage = function SitePage(_ref) {
     in: !trigger,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 140
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: classes.appBar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 141
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_15__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 142
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("div", {
     className: classes.left,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 143
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_20___default.a, {
@@ -41086,7 +41209,7 @@ var SitePage = function SitePage(_ref) {
     prefetch: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 144
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -41095,14 +41218,14 @@ var SitePage = function SitePage(_ref) {
     focusRipple: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 145
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(PageIcon, {
     className: classes.titleIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 146
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -41110,34 +41233,34 @@ var SitePage = function SitePage(_ref) {
     variant: "h6",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 147
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("span", {
     className: classes.desktopTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144
+      lineNumber: 148
     },
     __self: this
   }, "Cedric McDougal"), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("span", {
     className: classes.mobileTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 151
     },
     __self: this
   }, mobileTitle)))), shouldLoadFish && react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("div", {
     className: classes.fishHelmetContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 156
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("picture", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 157
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("source", {
@@ -41145,7 +41268,7 @@ var SitePage = function SitePage(_ref) {
     type: "image/webp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 158
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("img", {
@@ -41155,7 +41278,7 @@ var SitePage = function SitePage(_ref) {
     srcSet: "".concat(FISH_240, " 240w, ").concat(FISH_480, " 480w"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 159
     },
     __self: this
   })))), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -41168,7 +41291,7 @@ var SitePage = function SitePage(_ref) {
     value: selectedTab ? selectedTab.href : false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 169
     },
     __self: this
   }, TABS.map(function (_ref3) {
@@ -41185,7 +41308,7 @@ var SitePage = function SitePage(_ref) {
         className: classes.underline,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183
+          lineNumber: 187
         },
         __self: this
       })),
@@ -41197,7 +41320,7 @@ var SitePage = function SitePage(_ref) {
       value: href,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 173
+        lineNumber: 177
       },
       __self: this
     });
@@ -41210,14 +41333,14 @@ var SitePage = function SitePage(_ref) {
     title: "Menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196
+      lineNumber: 200
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_MenuIcon__WEBPACK_IMPORTED_MODULE_30__["default"], {
     className: classes.menuIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 203
+      lineNumber: 207
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -41228,7 +41351,7 @@ var SitePage = function SitePage(_ref) {
     open: drawerIsOpen,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205
+      lineNumber: 209
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -41236,7 +41359,7 @@ var SitePage = function SitePage(_ref) {
     component: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211
+      lineNumber: 215
     },
     __self: this
   }, PAGES.map(function (_ref4) {
@@ -41250,7 +41373,7 @@ var SitePage = function SitePage(_ref) {
       prefetch: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 214
+        lineNumber: 218
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -41259,28 +41382,28 @@ var SitePage = function SitePage(_ref) {
       component: "a",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 215
+        lineNumber: 219
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_10__["default"], {
       className: classes.drawerListItemIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 219
+        lineNumber: 223
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(Icon, {
       className: classes.drawerListIcon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 220
+        lineNumber: 224
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
       primary: label,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 222
+        lineNumber: 226
       },
       __self: this
     })));
@@ -41288,7 +41411,7 @@ var SitePage = function SitePage(_ref) {
     maxWidth: "xl",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 232
+      lineNumber: 236
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41298,7 +41421,7 @@ var SitePage = function SitePage(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233
+      lineNumber: 237
     },
     __self: this
   }, children, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -41310,14 +41433,14 @@ var SitePage = function SitePage(_ref) {
     p: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 235
+      lineNumber: 239
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
     component: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236
+      lineNumber: 240
     },
     __self: this
   }, PAGES.map(function (_ref5) {
@@ -41335,7 +41458,7 @@ var SitePage = function SitePage(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 239
+        lineNumber: 243
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -41346,14 +41469,14 @@ var SitePage = function SitePage(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 249
+        lineNumber: 253
       },
       __self: this
     }));
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 260
+      lineNumber: 264
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41366,14 +41489,14 @@ var SitePage = function SitePage(_ref) {
     title: "GitHub",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 261
+      lineNumber: 265
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_GitHubIcon__WEBPACK_IMPORTED_MODULE_26__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 269
+      lineNumber: 273
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41386,14 +41509,14 @@ var SitePage = function SitePage(_ref) {
     title: "LinkedIn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 271
+      lineNumber: 275
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_LinkedInIcon__WEBPACK_IMPORTED_MODULE_28__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 279
+      lineNumber: 283
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -41406,14 +41529,14 @@ var SitePage = function SitePage(_ref) {
     title: "Email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 281
+      lineNumber: 285
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_23___default.a.createElement(_EmailIcon__WEBPACK_IMPORTED_MODULE_25__["default"], {
     className: classes.footerIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 289
+      lineNumber: 293
     },
     __self: this
   })))))));
@@ -41965,9 +42088,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _CodeCard_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./CodeCard.css */ "./containers/Code/CodeCard/CodeCard.css");
-/* harmony import */ var _CodeCard_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_CodeCard_css__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _Media__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Media */ "./containers/Code/CodeCard/Media/index.js");
+/* harmony import */ var _components_Media__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../components/Media */ "./components/Media/index.js");
+/* harmony import */ var _CodeCard_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./CodeCard.css */ "./containers/Code/CodeCard/CodeCard.css");
+/* harmony import */ var _CodeCard_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_CodeCard_css__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -42094,7 +42217,7 @@ var CodeCard = function CodeCard(_ref) {
       image = _ref.image,
       label = _ref.label,
       name = _ref.name;
-  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_8__["makeStyles"])(_CodeCard_css__WEBPACK_IMPORTED_MODULE_13___default.a)();
+  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_8__["makeStyles"])(_CodeCard_css__WEBPACK_IMPORTED_MODULE_14___default.a)();
   var theme = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_8__["useTheme"])();
   var cardRef = Object(react__WEBPACK_IMPORTED_MODULE_12__["useRef"])(null);
   var contentRef = Object(react__WEBPACK_IMPORTED_MODULE_12__["useRef"])(null);
@@ -42203,13 +42326,13 @@ var CodeCard = function CodeCard(_ref) {
     open: Boolean(selected),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 230
+      lineNumber: 231
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 237
+      lineNumber: 238
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -42218,14 +42341,14 @@ var CodeCard = function CodeCard(_ref) {
     unmountOnExit: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 239
+      lineNumber: 240
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     className: classes.backdrop,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 240
+      lineNumber: 241
     },
     __self: this
   })), selected && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
@@ -42233,21 +42356,21 @@ var CodeCard = function CodeCard(_ref) {
     role: "presentation",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 243
+      lineNumber: 244
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     className: classes.media,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 244
+      lineNumber: 245
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     className: classes.content,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 245
+      lineNumber: 246
     },
     __self: this
   }, description)), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6__["default"], _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, containerProps, {
@@ -42255,10 +42378,10 @@ var CodeCard = function CodeCard(_ref) {
     ref: cardRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 248
+      lineNumber: 249
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_Media__WEBPACK_IMPORTED_MODULE_14__["default"], _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, mediaProps, {
+  }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_Media__WEBPACK_IMPORTED_MODULE_13__["default"], _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, mediaProps, {
     "aria-label": label,
     className: classes.media,
     disableRipple: true,
@@ -42266,7 +42389,7 @@ var CodeCard = function CodeCard(_ref) {
     title: selected ? null : label,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 255
+      lineNumber: 256
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
@@ -42274,14 +42397,14 @@ var CodeCard = function CodeCard(_ref) {
     ref: contentRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 263
+      lineNumber: 264
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     className: classes.contentInner,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 264
+      lineNumber: 265
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -42289,7 +42412,7 @@ var CodeCard = function CodeCard(_ref) {
     variant: "caption",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265
+      lineNumber: 266
     },
     __self: this
   }, label), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -42298,14 +42421,14 @@ var CodeCard = function CodeCard(_ref) {
     variant: "caption",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 268
+      lineNumber: 269
     },
     __self: this
   }, " ", "\u2014", " ", description)), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, contentActionProps, {
     className: classes.contentActions,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 276
+      lineNumber: 277
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -42314,7 +42437,7 @@ var CodeCard = function CodeCard(_ref) {
     onClick: handleClose,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 277
+      lineNumber: 278
     },
     __self: this
   }, "Back"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -42326,7 +42449,7 @@ var CodeCard = function CodeCard(_ref) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 283
+      lineNumber: 284
     },
     __self: this
   }, "Check it out!")))));
@@ -42343,122 +42466,6 @@ CodeCard.propTypes = {
   name: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_10__["withRouter"])(CodeCard));
-
-/***/ }),
-
-/***/ "./containers/Code/CodeCard/Media/Media.js":
-/*!*************************************************!*\
-  !*** ./containers/Code/CodeCard/Media/Media.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "../node_modules/@babel/runtime-corejs2/helpers/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/defineProperty */ "../node_modules/@babel/runtime-corejs2/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/objectWithoutProperties */ "../node_modules/@babel/runtime-corejs2/helpers/objectWithoutProperties.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/ButtonBase */ "../node_modules/@material-ui/core/esm/ButtonBase/index.js");
-/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/styles */ "../node_modules/@material-ui/styles/esm/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-
-
-
-
-var _jsxFileName = "/home/cedric/Documents/personal-site/src/containers/Code/CodeCard/Media/Media.js";
-
-
-
-
-
-
-var Media = function Media(_ref) {
-  var className = _ref.className,
-      image = _ref.image,
-      otherProps = _babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3___default()(_ref, ["className", "image"]);
-
-  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(function () {
-    return {
-      loadImage: {},
-      mediaBackground: {
-        'html.no-webp &$loadImage': {
-          backgroundImage: "url('".concat(image.default, "')")
-        },
-        'html.webp &$loadImage ': {
-          backgroundImage: "url('".concat(image.webp, "')")
-        }
-      }
-    };
-  })();
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])(false),
-      _useState2 = _babel_runtime_corejs2_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
-      shouldLoadImage = _useState2[0],
-      setShouldLoadImage = _useState2[1];
-
-  var ref = Object(react__WEBPACK_IMPORTED_MODULE_8__["useRef"])(null);
-  Object(react__WEBPACK_IMPORTED_MODULE_8__["useEffect"])(function () {
-    if ("IntersectionObserver" in window) {
-      var lazyImageObserver = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            setShouldLoadImage(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      });
-      lazyImageObserver.observe(ref.current);
-    } else {
-      setShouldLoadImage(true);
-    }
-  }, []);
-  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_4__["default"], _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, otherProps, {
-    className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(className, classes.mediaBackground, _babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, classes.loadImage, shouldLoadImage)),
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }));
-};
-
-Media.defaultProps = {
-  className: null
-};
-Media.propTypes = {
-  className: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  image: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.shape({
-    default: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired,
-    webp: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired
-  }).isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (Media);
-
-/***/ }),
-
-/***/ "./containers/Code/CodeCard/Media/index.js":
-/*!*************************************************!*\
-  !*** ./containers/Code/CodeCard/Media/index.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Media__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Media */ "./containers/Code/CodeCard/Media/Media.js");
-
-/* harmony default export */ __webpack_exports__["default"] = (_Media__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 

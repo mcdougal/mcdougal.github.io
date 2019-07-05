@@ -3271,7 +3271,7 @@ var defaultTheme = Object(_createMuiTheme__WEBPACK_IMPORTED_MODULE_0__["default"
 /*!*************************************************************!*\
   !*** ../node_modules/@material-ui/core/esm/styles/index.js ***!
   \*************************************************************/
-/*! exports provided: createMuiTheme, createStyles, makeStyles, MuiThemeProvider, responsiveFontSizes, styled, useTheme, withStyles, withTheme, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, easing, duration, formatMs, isString, isNumber */
+/*! exports provided: hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, MuiThemeProvider, responsiveFontSizes, styled, easing, duration, formatMs, isString, isNumber, useTheme, withStyles, withTheme */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37078,12 +37078,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createMuiTheme"])({
   overrides: {
-    MuiLink: {
-      root: {
-        color: _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_1___default.a.main,
-        '&:hover': {
-          color: _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_1___default.a.main
-        }
+    MuiButton: {
+      textSecondary: {
+        color: _material_ui_core_colors_orange__WEBPACK_IMPORTED_MODULE_1___default.a[600]
       }
     }
   },
