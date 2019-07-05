@@ -41985,7 +41985,7 @@ var Code = function Code() {
     },
   
     'media': {
-      'backgroundSize': 'cover','height': '0','paddingTop': '50%','transitionDuration': theme.transitions.duration.standard,'transitionProperty': 'opacity','transitionTimingFunction': theme.transitions.easing.easeInOut,'width': '100%',
+      'backgroundSize': 'cover','display': 'block','height': '0','paddingTop': '50%','transitionDuration': theme.transitions.duration.standard,'transitionProperty': 'opacity','transitionTimingFunction': theme.transitions.easing.easeInOut,'width': '100%',
       
     },
   
@@ -42313,6 +42313,7 @@ var CodeCard = function CodeCard(_ref) {
     };
   } else {
     mediaProps = {
+      disableRipple: true,
       onClick: handleOpen
     };
   }
@@ -42326,13 +42327,13 @@ var CodeCard = function CodeCard(_ref) {
     open: Boolean(selected),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 231
+      lineNumber: 232
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 238
+      lineNumber: 239
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -42341,14 +42342,14 @@ var CodeCard = function CodeCard(_ref) {
     unmountOnExit: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 240
+      lineNumber: 241
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     className: classes.backdrop,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 241
+      lineNumber: 242
     },
     __self: this
   })), selected && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
@@ -42356,21 +42357,21 @@ var CodeCard = function CodeCard(_ref) {
     role: "presentation",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 244
+      lineNumber: 245
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     className: classes.media,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 245
+      lineNumber: 246
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
     className: classes.content,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 246
+      lineNumber: 247
     },
     __self: this
   }, description)), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6__["default"], _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, containerProps, {
@@ -42378,18 +42379,17 @@ var CodeCard = function CodeCard(_ref) {
     ref: cardRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 249
+      lineNumber: 250
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_Media__WEBPACK_IMPORTED_MODULE_13__["default"], _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, mediaProps, {
     "aria-label": label,
     className: classes.media,
-    disableRipple: true,
     image: image,
     title: selected ? null : label,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 256
+      lineNumber: 257
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
