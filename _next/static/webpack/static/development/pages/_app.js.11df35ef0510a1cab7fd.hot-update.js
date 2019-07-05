@@ -1,86 +1,5 @@
 webpackHotUpdate("static/development/pages/_app.js",{
 
-/***/ "./components/Offline/Offline.css":
-/*!****************************************!*\
-  !*** ./components/Offline/Offline.css ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-    module.exports = function cssToMuiLoader(theme) {
-      
-      
-      
-      return {
-        
-        
-    'offline': {
-      'background': theme.palette.secondary.main,'bottom': '0','color': theme.palette.common.white,'left': '0','position': 'fixed','zIndex': theme.zIndex.snackbar,
-      
-    },
-  
-      };
-    
-    };
-  
-
-/***/ }),
-
-/***/ "./components/Offline/Offline.js":
-/*!***************************************!*\
-  !*** ./components/Offline/Offline.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/styles */ "../node_modules/@material-ui/styles/esm/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Offline_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Offline.css */ "./components/Offline/Offline.css");
-/* harmony import */ var _Offline_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Offline_css__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/home/cedric/Documents/personal-site/src/components/Offline/Offline.js";
-
-
-
-
-
-var Offline = function Offline() {
-  var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_0__["makeStyles"])(_Offline_css__WEBPACK_IMPORTED_MODULE_3___default.a)();
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: classes.offline,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "You are offline");
-};
-
-Offline.propTypes = {};
-/* harmony default export */ __webpack_exports__["default"] = (Offline);
-
-/***/ }),
-
-/***/ "./components/Offline/index.js":
-/*!*************************************!*\
-  !*** ./components/Offline/index.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Offline__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Offline */ "./components/Offline/Offline.js");
-
-/* harmony default export */ __webpack_exports__["default"] = (_Offline__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
-/***/ }),
-
 /***/ "./pages/_app.js":
 /*!***********************!*\
   !*** ./pages/_app.js ***!
@@ -229,7 +148,7 @@ function (_App) {
       }); // Register service worker, if the browser supports it
 
       if ("serviceWorker" in window.navigator) {
-        window.navigator.serviceWorker.register("/static/serviceWorker.js").catch(function () {// Service worker registration failed
+        window.navigator.serviceWorker.register("/serviceWorker.js").catch(function () {// Service worker registration failed
         });
       }
 
@@ -259,20 +178,20 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_12__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_material_ui_styles__WEBPACK_IMPORTED_MODULE_11__["ThemeProvider"], {
         theme: this.muiContext.theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 78
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_material_ui_styles__WEBPACK_IMPORTED_MODULE_11__["StylesProvider"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 79
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(Component, _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
@@ -280,13 +199,13 @@ function (_App) {
       }, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 80
         },
         __self: this
       })), offline && react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_components_Offline__WEBPACK_IMPORTED_MODULE_14__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 81
         },
         __self: this
       }))));
@@ -301,4 +220,4 @@ function (_App) {
 /***/ })
 
 })
-//# sourceMappingURL=_app.js.ebc13065d99efb170307.hot-update.js.map
+//# sourceMappingURL=_app.js.11df35ef0510a1cab7fd.hot-update.js.map

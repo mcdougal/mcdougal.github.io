@@ -37233,7 +37233,7 @@ function (_App) {
       }); // Register service worker, if the browser supports it
 
       if ("serviceWorker" in window.navigator) {
-        window.navigator.serviceWorker.register("/static/serviceWorker.js").catch(function () {// Service worker registration failed
+        window.navigator.serviceWorker.register("/serviceWorker.js").catch(function () {// Service worker registration failed
         });
       }
 
@@ -37263,20 +37263,20 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_12__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_material_ui_styles__WEBPACK_IMPORTED_MODULE_11__["ThemeProvider"], {
         theme: this.muiContext.theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 78
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_material_ui_styles__WEBPACK_IMPORTED_MODULE_11__["StylesProvider"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 79
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(Component, _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
@@ -37284,13 +37284,13 @@ function (_App) {
       }, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 80
         },
         __self: this
       })), offline && react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_components_Offline__WEBPACK_IMPORTED_MODULE_14__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 81
         },
         __self: this
       }))));
