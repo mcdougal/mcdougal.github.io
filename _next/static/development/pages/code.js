@@ -40430,7 +40430,7 @@ Media.defaultProps = {
 };
 Media.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  component: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.func]),
+  component: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.object]),
   image: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.shape({
     default: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired,
     webp: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired

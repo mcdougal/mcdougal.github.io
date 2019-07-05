@@ -1,4 +1,4 @@
-webpackHotUpdate("static/development/pages/writing.js",{
+webpackHotUpdate("static/development/pages/code.js",{
 
 /***/ "./components/Media/Media.js":
 /*!***********************************!*\
@@ -38,10 +38,11 @@ var _jsxFileName = "/home/cedric/Documents/personal-site/src/components/Media/Me
 
 var Media = function Media(_ref) {
   var className = _ref.className,
+      component = _ref.component,
       image = _ref.image,
-      otherProps = _babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3___default()(_ref, ["className", "image"]);
+      otherProps = _babel_runtime_corejs2_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3___default()(_ref, ["className", "component", "image"]);
 
-  console.log(image);
+  var Component = component;
   var classes = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(function () {
     return {
       loadImage: {},
@@ -77,22 +78,24 @@ var Media = function Media(_ref) {
       setShouldLoadImage(true);
     }
   }, []);
-  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_4__["default"], _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, otherProps, {
+  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, otherProps, {
     className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(className, classes.mediaBackground, _babel_runtime_corejs2_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, classes.loadImage, shouldLoadImage)),
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: this
   }));
 };
 
 Media.defaultProps = {
-  className: null
+  className: null,
+  component: _material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_4__["default"]
 };
 Media.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  component: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.object]),
   image: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.shape({
     default: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired,
     webp: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired
@@ -103,4 +106,4 @@ Media.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=writing.js.8d51acf58e1ad83b9dea.hot-update.js.map
+//# sourceMappingURL=code.js.a71d4e04009d7e095bbf.hot-update.js.map
