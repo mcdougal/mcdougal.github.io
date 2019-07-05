@@ -42385,8 +42385,10 @@ var CodeCard = function CodeCard(_ref) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement(_material_ui_core_ButtonBase__WEBPACK_IMPORTED_MODULE_5__["default"], _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, mediaProps, {
+    "aria-label": label,
     className: classnames__WEBPACK_IMPORTED_MODULE_11___default()(classes.media, classes.mediaBackground),
     disableRipple: true,
+    title: selected ? null : label,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 291
@@ -42397,14 +42399,14 @@ var CodeCard = function CodeCard(_ref) {
     ref: contentRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 296
+      lineNumber: 298
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement("div", {
     className: classes.contentInner,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 297
+      lineNumber: 299
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -42412,7 +42414,7 @@ var CodeCard = function CodeCard(_ref) {
     variant: "caption",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 298
+      lineNumber: 300
     },
     __self: this
   }, label), react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -42421,14 +42423,14 @@ var CodeCard = function CodeCard(_ref) {
     variant: "caption",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 301
+      lineNumber: 303
     },
     __self: this
   }, " ", "\u2014", " ", description)), react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement("div", _babel_runtime_corejs2_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, contentActionProps, {
     className: classes.contentActions,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 309
+      lineNumber: 311
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -42437,7 +42439,7 @@ var CodeCard = function CodeCard(_ref) {
     onClick: handleClose,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 310
+      lineNumber: 312
     },
     __self: this
   }, "Back"), react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -42449,7 +42451,7 @@ var CodeCard = function CodeCard(_ref) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 316
+      lineNumber: 318
     },
     __self: this
   }, "Check it out!")))));
